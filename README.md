@@ -1,3 +1,1 @@
-# PythonToCpp
-
-Translating Python code to C++
+A 2D-Histogram filter implemented in C++
