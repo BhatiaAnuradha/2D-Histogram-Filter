@@ -1,7 +1,9 @@
 A 2D-Histogram filter implemented in C++, to help a robot move through a colored cyclical grid. 
 
-##localizer.cpp#
+##localizer
+
 Contains the functions `initialize_beliefs`, `sense` and `move`. 
+
 **initialize_beliefs**
 
 The function `initialize_beliefs` initializes a grid of beliefs to a uniform distribution, by taking in a 2D grid map representing the world in terms of color, and returning a normalized 2D grid. 
@@ -14,8 +16,10 @@ The function `move` implements robot motion by updating the beliefs based on the
 
 The function `sense` implements robot sensing by updating beliefs based on the color of the sensor measurement. As inputs, it takes in the current map represented by color, the robot's beliefs before the measurement, the relative probability (p_hit) that the measurement is correct and the relative probability that the measurement is incorrect(p_miss). It returns the updated beliefs of the robot after the measurement.
 
-##helpers.cpp
+##helpers
+
 Contains helper functions for localizer.cpp
+
 **normalize**
  
 The `normalize` functions normalizes a grid of numbers. It takes in a 2D grid of numbers representing the probabilities for each cell and returns a 2D grid where the sum of all the probabilities is one. 
